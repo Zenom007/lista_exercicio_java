@@ -1,0 +1,22 @@
+<script>
+//3) Escreva um programa para ler as notas das duas avaliações de um aluno no semestre, calcular e 
+escrever a média semestral e a seguinte mensagem: PARABÉNS! Você foi aprovado! somente se o aluno foi aprovado (considere 6.0 a média mínima para aprovação).
+
+//entrada
+ler nota1 = parseFloat(prompt("nota 1?"))
+ler nota2 = parseFloat(prompt("nota 2?"))
+
+//processamento
+let media = (nota1 + nota2) / 2 
+let resposta = ""
+if (media > 6) {
+    resposta = "aprovado"
+
+}
+let resultado = verificarResultado(nota1, nota2)
+//document.write("media: ", media)
+document.write("resposta: ", resultado)
+//saida
+
+
+</script>
